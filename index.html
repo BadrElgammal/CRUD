@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contaner">
+                <div class="form_Group">
+                <label for="productName">Product Name</label>
+                <br/>
+                <input  class="form_control " type="text" id="productName">
+            </div>
+            <div class="form_Group">
+                <label for="productPrice">Product Price</label>
+                <br/>
+                <input class="form_control" type="number" id="productPrice">
+            </div>
+            <div class="form_Group">
+                <label for="productCategory">Product Category</label>
+                <br/>
+                <input class="form_control" type="text" id="productCategory">
+            </div>
+            <div class="form_Group">
+                <label for="productDesc">Product Desc</label>
+                <br/>
+                <textarea class="form_control" id="productDesc"></textarea>
+            </div>
+            <div class="btns">
+                <button  class="btnA btnColorAdd" id="btnA">Add Product</button>
+            </div>
+    </div>
+    <div class="contaner2">
+        <input onkeyup="searchProduct(this.value)" placeholder="Search...." style="width: 50%;" class="form_control" type="text" id="search">
+        <table class="table my-5">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Category</th>
+                    <th>Product Desc</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- <tr>
+                    <td>0</td>
+                    <td>Toshiba</td>
+                    <td>900</td>
+                    <td>Mobile</td>
+                    <td>Good</td>
+                    <td><button class="btnU btnColorUpdate">Update</button></td>
+                    <td><button class="btnD btnColorDelete">Delete</button></td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
